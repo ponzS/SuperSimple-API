@@ -1,8 +1,8 @@
 {
   "name": "simple-apis",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "private": false,
-  "description": "Minimal axios curry wrapper: simple.post(url)(data)",
+  "description": "simple.any",
   "license": "MIT",
   "type": "module",
   "main": "dist/index.js",
@@ -26,7 +26,8 @@
     "url": "https://github.com/ponzS/simple-apis.git"
   },
   "dependencies": {
-    "axios": "^1.7.7"
+    "axios": "^1.7.7",
+    "unsea": "^1.1.2"
   },
   "devDependencies": {
     "typescript": "^5.6.3"
