@@ -5,13 +5,13 @@
 ## 安装
 - 使用 pnpm：
   ```bash
-  pnpm add super-simple-api
+  pnpm add @ponzs/super-simple-api
   ```
 
 ## 快速上手
 - 发送 POST：
   ```ts
-  import { simple } from 'super-simple-api'
+  import { simple } from '@ponzs/super-simple-api'
 
   simple.post('https://example.com/api/users')({ name: 'Grok', age: 1 })
     .then(response => console.log(response.data))
@@ -20,7 +20,7 @@
 
 - 使用对象变量传参：
   ```ts
-  import { simple } from 'super-simple-api'
+  import { simple } from '@ponzs/super-simple-api'
 
   type CreateUserPayload = { name: string; age: number }
   const payload: CreateUserPayload = { name: 'Grok', age: 1 }
