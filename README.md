@@ -1,4 +1,4 @@
-# super-simple-api
+# simple-apis
 
 [中文文档](./README.zh-CN.md)
 
@@ -7,13 +7,13 @@ A minimal, curried wrapper around axios with `simple.post(url)(data)` ergonomics
 ## Install
 - Using pnpm:
   ```bash
-  pnpm add @ponzs/super-simple-api
+  pnpm add simple-apis
   ```
 
 ## Quick Start
 - POST request:
   ```ts
-  import { simple } from '@ponzs/super-simple-api'
+  import { simple } from 'simple-apis'
 
   simple.post('https://example.com/api/users')({ name: 'Grok', age: 1 })
     .then(response => console.log(response.data))
@@ -22,7 +22,7 @@ A minimal, curried wrapper around axios with `simple.post(url)(data)` ergonomics
 
 - Pass a typed object variable:
   ```ts
-  import { simple } from '@ponzs/super-simple-api'
+  import { simple } from 'simple-apis'
 
   type CreateUserPayload = { name: string; age: number }
   const payload: CreateUserPayload = { name: 'Grok', age: 1 }

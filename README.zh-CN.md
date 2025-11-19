@@ -1,17 +1,17 @@
-# super-simple-api
+# simple-apis
 
 一个基于 axios 的极简柯里化封装，支持 `simple.post(url)(data)` 的调用体验。
 
 ## 安装
 - 使用 pnpm：
   ```bash
-  pnpm add @ponzs/super-simple-api
+  pnpm add simple-apis
   ```
 
 ## 快速上手
 - 发送 POST：
   ```ts
-  import { simple } from '@ponzs/super-simple-api'
+  import { simple } from 'simple-apis'
 
   simple.post('https://example.com/api/users')({ name: 'Grok', age: 1 })
     .then(response => console.log(response.data))
@@ -20,7 +20,7 @@
 
 - 使用对象变量传参：
   ```ts
-  import { simple } from '@ponzs/super-simple-api'
+  import { simple } from 'simple-apis'
 
   type CreateUserPayload = { name: string; age: number }
   const payload: CreateUserPayload = { name: 'Grok', age: 1 }
